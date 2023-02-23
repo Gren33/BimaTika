@@ -1,2 +1,6 @@
 # BimaTika
-BimaTika allows its members to access affordable health insurance cover by  spending at registered merchants and earning health insurance cover benefits.  Subscribers can process claims at health care facilities whereby payment and  processing is done instantly electronically.
+BimaTika is a propriety mobile electronic platform providing micro-insurance 
+products to guarantee affordable access to health care services. BimaTika engages 
+private enterprise as a solution to bridge premiums collection and claim 
+processing, at health care centres. BimaTika is backed by blockchain technology 
+using Web3 tools deliver services effectively to all stakeholders.
