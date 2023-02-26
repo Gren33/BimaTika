@@ -1,4 +1,4 @@
-.profile {
+.welcome {
   position: relative;
   width: 375px;
   height: 100vh;
@@ -6,154 +6,84 @@
   left: 40%;
 }
 
-.profile-post {
+.welcome h1 {
   position: absolute;
-  height: 245px;
+  top: 12%;
+  left: 100px;
+  letter-spacing: 1px;
+}
+
+.welcome h1 span {
+  color: #5db075;
+  font-weight: bold;
+}
+
+.welcome h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 35px;
   width: 100%;
-  background: #5db075;
-}
-
-.profile-post h2 {
-  height: 36px;
-  width: 343px;
-  border-radius: 0px;
   position: absolute;
-  width: 94px;
-  left: calc(50% - 94px / 2 + 1.5px);
-  top: 40px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  color: #ffffff;
+  top: 25%;
 }
-
-.image-container {
-  box-sizing: border-box;
-  position: absolute;
-  width: 158px;
-  height: 158px;
-  left: calc(50% - 158px / 2 - 0.5px);
-  top: 120px;
-  /* border: 4px solid #ffffff; */
-  filter: drop-shadow(0px 4px 20px rgba(101, 101, 101, 0.15));
-  border-radius: 50%;
-}
-
-.image {
-  box-sizing: border-box;
-  position: absolute;
-  width: 158px;
-  height: 158px;
-  left: calc(50% - 158px / 2 - 0.5px);
-  top: 0px;
-  border: 4px solid #ffffff;
-  filter: drop-shadow(0px 4px 20px rgba(101, 101, 101, 0.15));
-  border-radius: 50%;
-}
-
-.image-container h2 {
-  position: absolute;
-  width: 272px;
-  height: 36px;
-  left: -60px;
-  top: 180px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  color: #000000;
-}
-
-.bar {
-  position: absolute;
-  height: 50px;
-  left: 42px;
-  top: 389px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 295px;
-  border-radius: 100px;
-  background: #f6f6f6;
-  border: 1px solid #e8e8e8;
-}
-
-.bar .btn1 {
-  height: 46px;
-  width: 150.5px;
-  border-radius: 100px;
+.welcome h2 span {
   color: #5db075;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 15px;
-  font-weight: 700;
-  padding: 15px;
-  cursor: pointer;
+  font-weight: bold;
 }
 
-.bar .btn2 {
-  height: 46px;
-  width: 150.5px;
-  border-radius: 100px;
-  /* color: #bdbdbd; */
-  color: #5db075;
-  background: #d9d9d9;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding: 15px;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-.hero {
-  height: 77.0000228881836px;
-  position: relative;
-  width: 330px;
-  border-radius: 0px;
-  height: 150px;
-  left: 5%;
-  bottom: -190%;
-}
-.hero h3 {
+.welcome h3 {
   position: absolute;
-  width: 65px;
-  height: 19px;
-  left: 10%;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  color: #000000;
+  top: 40%;
+  left: 40px;
 }
-.hero p {
+.welcome p {
   position: absolute;
-  height: 34px;
-  left: 10%;
-  right: 8px;
-  top: 27px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.hero :nth-child(3) {
-  position: absolute;
-  left: 50%;
-  font-size: 30px;
   top: 50%;
+  left: 80px;
+}
+.btn-area {
+  position: absolute;
+  top: 60%;
+  margin: 0 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-area .userbtn {
+  width: 150px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  border-radius: 100px;
+  color: #ffffff;
+  background: #5db075;
   cursor: pointer;
 }
-.hero :nth-child(4) {
+
+.btn-area .userbtn:hover {
+  background-color: #ffffff;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-area .merchantbtn {
   width: 150px;
-  height: 150px;
-  left: 30%;
-  top: 70%;
+  height: 45px;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  border-radius: 100px;
+  color: #ffffff;
+  background: #5db075;
+  cursor: pointer;
+}
+
+.btn-area .merchantbtn:hover {
+  background-color: #ffffff;
+  color: #000;
+  transition: 0.3s ease-in-out;
 }

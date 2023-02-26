@@ -1,63 +1,31 @@
-import { faCamera } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
-import { QrReader } from "react-qr-reader";
+import React from "react";
 import "./Layout.css";
-import profileImage from "../assets/profile.jpg";
+import { Link, Outlet } from "react-router-dom";
 
 function Layout() {
-  const Users = [
-    {
-      id: 1,
-      heading: "Scanner",
-      text: "Scan a QR code here  to redeem your tokens.",
-      icon: <FontAwesomeIcon icon={faCamera} id="icon" />,
-      action: <QrReader scanDelay={300} legacyMode={false} />,
-    },
-    {
-      id: 2,
-      heading: "Hi user",
-      text: "Your token balance is 124",
-    },
-  ];
-
-  const [selected, setSelected] = useState(0);
-
-  const earnToken = () => {
-    {
-      selected === 0 ? setSelected(0) : setSelected(0);
-    }
-  };
-
-  function showToken() {
-    selected === 1 ? setSelected(1) : setSelected(1);
-  }
-
   return (
-    <div className="profile">
-      <div className="profile-post">
-        <h2>Profile</h2>
+    <>
+      <div className="welcome">
+        <h1>
+          BIMA<span>TIKA</span>
+        </h1>
+        <h2>
+          Welcome to Bima<span>Tika</span>
+        </h2>
+        <h3>Are you a Customer or Merchant ?</h3>
+        <p>Select below what are you!</p>
+        <div className="btn-area">
+          <Link to="/user">
+            <button className="userbtn">User</button>
+          </Link>
+          <Link to="/merchant">
+            <button className="merchantbtn">Merchant</button>
+          </Link>
+        </div>
 
-        <div className="image-container">
-          <img className="image" src={profileImage} alt="profile-image" />
-          <h2>Victoria Robertson</h2>
-        </div>
-        <div className="bar">
-          <button className="btn1" onClick={earnToken}>
-            Earn Token
-          </button>
-          <button className="btn2" onClick={showToken}>
-            Token Balance
-          </button>
-        </div>
-        <div className="hero">
-          <h3>{Users[selected].heading}</h3>
-          <p>{Users[selected].text}</p>
-          <p>{Users[selected].icon}</p>
-          <p>{Users[selected].action}</p>
-        </div>
+        <Outlet />
       </div>
-    </div>
+    </>
   );
 }
 

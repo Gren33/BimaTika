@@ -1,16 +1,21 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
+import User from "./components/User";
+import Merchant from "./components/Merchant";
 import Layout from "./components/Layout";
 
 function App() {
   return (
     <div className="App">
-      {/* <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="user1" element={<User />} />
+      <Routes>
+        <Route>
+          <Route index element={<Layout />} />
+          <Route path="user" element={<User />} />
+          <Route path="merchant" element={<Merchant />} />
         </Route>
-      </Routes> */}
-      <Layout />
+      </Routes>
+      {/* <Layout /> */}
     </div>
   );
 }
